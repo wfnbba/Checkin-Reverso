@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Nohemi';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/Nohemi-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/Nohemi-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Nohemi-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/Nohemi-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Nohemi-Medium.woff2') format('woff2');
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: #FFFBE1;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      rgba(24, 24, 24, 0.05) 0px,
+      rgba(24, 24, 24, 0.05) 1px,
+      transparent 1px,
+      transparent 55px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(24, 24, 24, 0.05) 0px,
+      rgba(24, 24, 24, 0.05) 1px,
+      transparent 1px,
+      transparent 55px
+    );
+  background-size: 55px 55px;
+  background-attachment: fixed;
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-nohemi {
+  font-family: 'Nohemi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.laranja {
+  color: #FF4002;
+}
+
+.degradepsico {
+  background: linear-gradient(90deg, #FF4002 0%, #FFFFFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 3D Retro Shadow button */
+.flip-card__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5.0625rem;
+  border: 1.133px solid #181818;
+  background: #FF4002;
+  box-shadow: -6.795px 6.795px 0 0 #000;
+  color: #FAF5D5;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.flip-card__btn:hover {
+  filter: brightness(1.05);
+}
+
+.flip-card__btn:active {
+  box-shadow: 0px 0px #323232;
+  transform: translate(-6px, 6px);
+}
+
+.flip-card__btn2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5.0625rem;
+  background: #FF4002;
+  border: 1.133px solid #FAF5D5;
+  box-shadow: -6.795px 6.795px 0 0 #FAF5D5;
+  color: #FAF5D5;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.flip-card__btn2:hover {
+  filter: brightness(1.05);
+}
+
+.flip-card__btn2:active {
+  box-shadow: 0px 0px #FAF5D5;
+  transform: translate(-6px, 6px);
+}
+
+.blocored {
+  padding: 0.85rem 1.6rem;
+  border-radius: 8px;
+  border: 1.133px solid #181818;
+  background: #FF4141;
+  box-shadow: -6.795px 6.795px 0 0 #000;
+  color: #FAF5D5;
+  font-weight: 500;
+}
+
+.center-98 {
+  width: 98%;
+  margin-inline: auto;
+}
+
+@media (max-width: 767px) {
+  .center-98 {
+    width: 94%;
+  }
+}
+
+/* Marquee continuous scroll animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF4002;
+  border-radius: 4px;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Formato Criativo de Conteúdo - Checkin Reverso",
+  "description": "Descubra como se hospedar nos melhores hotéis e pousadas do Brasil através do método Checkin Reverso.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
